@@ -1,0 +1,245 @@
+@font-face{
+    font-family: anton;
+    src: url(./fonts/Anton-Regular.ttf)
+}
+@font-face{
+    font-family: work_medium;
+    src: url(./fonts/WorkSans-Medium.ttf);
+}
+@font-face{
+    font-family: buba;
+    src: url(./fonts/BubaDEMO-Outline.otf);
+}
+@font-face{
+    font-family: sail;
+    src: url(./fonts/Sail-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: work_medium;
+}
+header{
+    height: auto;
+    width: 100%;
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 5px 5px gray;
+    background-color: honeydew;
+}
+.logo a{
+    font-family: anton;
+    font-size: 25px;
+    text-decoration: none;
+    background-color: honeydew;
+}
+.logo h1{
+    color: black;
+    background-color: honeydew;
+}
+span{
+    color: teal;
+    background-color: honeydew;
+}
+.navbar{
+    padding: 20px 70px;
+    font-family: work_medium;
+    font-size: 20px;
+    background-color: honeydew;
+}
+.navbar a{
+    padding: 5px;
+    text-decoration: none;
+    color: teal;
+    background-color: honeydew;
+}
+.contact{
+    position: relative;
+}
+#list{ 
+    background-color: white;
+    line-height: 1.5;
+    /* display: none; */
+    /* visibility: hidden; */
+    position: absolute;
+}
+.navbar a:hover{
+    color: rgb(36, 29, 66);
+}
+.contact:hover #list{
+    /* display: block; */
+    /* visibility: visible; */
+    position: inherit;
+}
+/* the end of th header  */
+/* the last part isn't working */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
+@keyframes hii{
+    from{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+main{
+    background-image: url(./images/arrière-plan-texture-en-bois-stratifié-beige-et-marron-utilisé-pour-les-planchers-fond-181606757.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.carousel{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    overflow: hidden;
+    max-width: 1100px;
+    position: relative;
+}
+.carousel .carouselpic, .carousel .carouselpic--hidden{
+    display: none;
+}
+.carousel .carouselpic img{
+    width: 100%;
+    max-width: 1100px;
+    height: 400px;
+    box-shadow: inset;
+    border-radius: 5px;
+}
+.carousel .picone{
+    display: block;
+    animation: fade 0.5s;
+}
+.carousel .move{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel .move button{
+    border-radius: 50%;
+    border: 0;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+.carousel .move button#prev-button{
+    margin-left: 20px;
+}
+.carousel .move button#next-button{
+    margin-right: 20px;
+}
+/* .carousel .carousel-text{
+    font-family: sail;
+    color: rgb(184, 184, 72);
+    font-size: 100px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+} */
+/* autoplay not done yet */
+/* fin du carousel */
+/* debut des 6 cuisines */
+.container{
+    background-color: white;
+    box-shadow: -2px 0 2px grey;
+    margin: 0px 100px;
+    padding: 50px;
+    height: 50em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    position: relative;
+}
+.kitch{
+    position: relative;
+    border: thin 2px rgb(155, 230, 198);
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    transition:all 400ms ease-out;
+    overflow: hidden;
+}
+.kitch:hover{
+    transform: scale(1.05);
+    border: 2px ridge burlywood;
+}
+.kitch a,h2{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-top: 60px;
+    background: transparent;
+    font-family: buba;
+    font-size: 70px;
+    display: none;
+}
+.kitch:hover a,h2{
+    display: block;
+}
+.france{
+    background-image: url(./images/french.jpg);
+    background-size: cover;
+    box-shadow: -1px 3px 2px rgb(204, 202, 198);
+}
+.italy{
+    background-image: url(./images/Italian\ food.jpg);
+    background-size: cover;
+    box-shadow: -1px 3px 2px rgb(204, 202, 198);
+}
+.china{
+    background-image: url(./images/chinese-food.jpg);
+    background-size: cover;
+    box-shadow: -1px 3px 2px rgb(204, 202, 198);
+}
+.india{
+    background-image: url(./images/Indian-Cuisine.jpg);
+    background-size: cover;
+    box-shadow: -1px 3px 2px rgb(204, 202, 198);
+}
+.turkey{
+    background-image: url(./images/turkish.jpg);
+    background-size: cover;
+    box-shadow: -1px 3px 2px rgb(204, 202, 198);
+}
+.algeria{
+    background-image: url(./images/alger.jpg);
+    background-size: cover;
+    box-shadow: -1px 3px 2px rgb(204, 202, 198);
+}
+.malesia{
+    background-image: url(./images/malesian\ food.jpg);
+    background-size: cover;
+    box-shadow: -1px 3px 2px rgb(204, 202, 198);
+}
+.fast{
+    background-image: url(./images/fast\ food.jpg);
+    background-size: cover;
+    box-shadow: -1px 3px 2px rgb(204, 202, 198);
+}
+
+/* why is this shit not working ?????????????? */
+
+
+
+

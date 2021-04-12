@@ -1,0 +1,77 @@
+@font-face{
+    font-family: anton;
+    src: url(./fonts/Anton-Regular.ttf)
+}
+@font-face{
+    font-family: work_medium;
+    src: url(./fonts/WorkSans-Medium.ttf);
+}
+@font-face{
+    font-family: buba;
+    src: url(./fonts/BubaDEMO-Outline.otf);
+}
+@font-face{
+    font-family: sail;
+    src: url(./fonts/Sail-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: work_medium;
+}
+header{
+    height: auto;
+    width: 100%;
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 5px 5px gray;
+    background-color: honeydew;
+}
+.logo a{
+    font-family: anton;
+    font-size: 25px;
+    text-decoration: none;
+    background-color: honeydew;
+}
+.logo h1{
+    color: black;
+    background-color: honeydew;
+}
+span{
+    color: teal;
+    background-color: honeydew;
+}
+.navbar{
+    padding: 20px 70px;
+    font-family: work_medium;
+    font-size: 20px;
+    background-color: honeydew;
+}
+.navbar a{
+    padding: 5px;
+    text-decoration: none;
+    color: teal;
+    background-color: honeydew;
+}
+.navbar .contact{
+    position: relative;
+}
+#list{ 
+    background-color: white;
+    line-height: 1.5;
+    display: none;
+    position: absolute;
+}
+.navbar a:hover{
+    color: rgb(36, 29, 66);
+}
+.navbar .contact:hover #list{
+    display: block;
+    position: inherit;
+}
