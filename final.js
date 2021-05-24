@@ -40,3 +40,42 @@ function moveToPrevSlide() {
     }
     updateSlidePosition()
 }
+// setTimeout
+
+//signup part
+
+// validate the email adress
+
+
+function validateEmail(){
+var x=document.forms["loginForm"]["email"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+
+var name = document.loginForm.name.value
+   if (name.length==0)
+    return alert(`name is required`)
+
+var password = document.loginForm.password.value
+if (password.length<8)
+    return alert(`password length should more than 8`)
+
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
+alert("Please enter a valid email address.");
+return false;
+}
+
+}
+
+
+
+//create an account 
+
+
+let compte = document.querySelector('done');
+compte.addEventListener('click', () => {
+    //don't know what to put inside
+    
+})
+
+// once home i'll do it 

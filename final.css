@@ -17,6 +17,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: work_medium;
@@ -48,34 +49,52 @@ span{
     background-color: honeydew;
 }
 .navbar{
-    padding: 20px 70px;
     font-family: work_medium;
+    padding: 20px 70px;
     font-size: 20px;
     background-color: honeydew;
+    display: flex;
+    justify-content: space-between;
 }
-.navbar a{
+.navbar a {
     padding: 5px;
     text-decoration: none;
     color: teal;
     background-color: honeydew;
 }
+.navbar a:hover{
+    color: rgb(11, 51, 51);
+}
 .contact{
     position: relative;
 }
-#list{ 
-    background-color: white;
+#list{
+    height: 140px;
+    width: 150px;
+    margin-top: 5px;
+    background-color: rgb(211, 207, 198);
+    border: 2px solid teal;
+    border-radius: 3px;
     line-height: 1.5;
-    /* display: none; */
-    /* visibility: hidden; */
+    box-shadow: 0 0 5px grey;
     position: absolute;
+    display: none;
 }
-.navbar a:hover{
-    color: rgb(36, 29, 66);
+#list ul{
+    padding-left: 0;
+}
+#list a,li{
+    color: black;
+    padding: 7px 0;
+    text-align: center;
+    list-style: none;
+    background-color: rgb(211, 207, 198);
 }
 .contact:hover #list{
-    /* display: block; */
-    /* visibility: visible; */
-    position: inherit;
+    display: block;    
+}
+#list li:hover a{
+    color: rgb(2, 112, 112);
 }
 /* the end of th header  */
 /* the last part isn't working */
@@ -98,18 +117,21 @@ span{
         opacity: 1;
     }
 }
-main{
+.principal{
+    height: 90rem;
     background-image: url(./images/arrière-plan-texture-en-bois-stratifié-beige-et-marron-utilisé-pour-les-planchers-fond-181606757.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .carousel{
-    margin-top: 100px;
+    margin-top: 80px;
     margin-left: 100px;
     margin-right: 100px;
     overflow: hidden;
     max-width: 1100px;
     position: relative;
+    border: 5px ridge rgb(245, 186, 152);
+    box-shadow: grey 1px 1px;
 }
 .carousel .carouselpic, .carousel .carouselpic--hidden{
     display: none;
@@ -133,29 +155,37 @@ main{
     top: 50%;
     transform: translateY(-50%);
 }
-.carousel .move button{
-    border-radius: 50%;
-    border: 0;
-    font-weight: bold;
-    font-size: 20px;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-}
 .carousel .move button#prev-button{
     margin-left: 20px;
+    border: none;
+    background-color: transparent;
+    color: rgb(73, 58, 30);
 }
 .carousel .move button#next-button{
     margin-right: 20px;
+    border: none;
+    background-color: transparent;
+    color: rgb(73, 58, 30);
 }
-/* .carousel .carousel-text{
-    font-family: sail;
-    color: rgb(184, 184, 72);
-    font-size: 100px;
+.arrow:hover{
+    border: medium 1px orange;
+    color: peru;
+}
+.circle{
     position: absolute;
-    text-align: center;
-    align-items: center;
-} */
+    display: flex;
+    justify-content: space-between;
+}
+.rond{
+    
+    background-color: teal;
+    width: 20px;
+    height: 20px;
+    border: 5px solid red;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute ;
+}
 /* autoplay not done yet */
 /* fin du carousel */
 /* debut des 6 cuisines */
@@ -163,13 +193,14 @@ main{
     background-color: white;
     box-shadow: -2px 0 2px grey;
     margin: 0px 100px;
-    padding: 50px;
-    height: 50em;
+    padding: 30px 60px;
+    height: 60em;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 33em 33em;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 30px;
     position: relative;
+    justify-content: center;
 }
 .kitch{
     position: relative;
@@ -180,6 +211,7 @@ main{
     font-size: 30px;
     transition:all 400ms ease-out;
     overflow: hidden;
+    cursor: pointer;
 }
 .kitch:hover{
     transform: scale(1.05);
@@ -188,14 +220,15 @@ main{
 .kitch a,h2{
     color: rgb(255, 255, 255);
     text-decoration: none;
-    margin-top: 60px;
+    margin-top: 90px;
     background: transparent;
     font-family: buba;
-    font-size: 70px;
+    font-size: 40px;
     display: none;
 }
 .kitch:hover a,h2{
     display: block;
+    background-color: rgb(36, 29, 66);
 }
 .france{
     background-image: url(./images/french.jpg);
@@ -237,9 +270,59 @@ main{
     background-size: cover;
     box-shadow: -1px 3px 2px rgb(204, 202, 198);
 }
+.news{
+    width: 100%;
+    height: 30em;
+    display: flex;
+}
+.news img{
+    position: relative;
+    margin: 80px;
+    height: 20em;
+    width: 20em;
+    border: ridge black 5px;
+}
+.tuto{
+    position: absolute;
+    text-align: center;
+    padding: 8rem 0;
+    height: 20rem;
+    width: 55%;
+    margin: 80px;
+    margin-left: 30rem;
+    background-color: rgb(238, 254, 255);
+    color: rgb(255, 0, 0);
+    font-family: work_medium;
+    font-size: 50px;
+    font-weight: 900;
+    display: none;
+}
+.news img:hover.tuto{
+    display: block;
+}
+.newstxt{
+    text-align: center;
+    margin: 50px 20px;
+}
+.newstxt h3{
+    margin: 50px;
+    font-size: 70px;
+    font-weight: bold;
+}
+.newstxt p{
+    font-family: sail;
+    font-size: 30px;
+}
 
 /* why is this shit not working ?????????????? */
 
-
-
+/* footer */
+footer{
+    height: 100px;
+    padding: 40px;
+    color: #fff;
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+}
 

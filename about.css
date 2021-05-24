@@ -31,12 +31,12 @@ header{
     z-index: 3;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px 5px 5px gray;
+    box-shadow: 0px 5px 5px grey;
     background-color: honeydew;
 }
 .logo a{
     font-family: anton;
-    font-size: 25px;
+    font-style: 25px;
     text-decoration: none;
     background-color: honeydew;
 }
@@ -80,9 +80,6 @@ span{
     position: absolute;
     display: none;
 }
-#list ul{
-    padding-left: 0;
-}
 #list a,li{
     color: black;
     padding: 7px 0;
@@ -92,58 +89,33 @@ span{
 }
 .contact:hover #list{
     display: block;
-    
 }
 #list li:hover a{
     color: rgb(2, 112, 112);
 }
-/* end of the header  */
+
+/* end of the header */
 main{
-    font-weight: bold;
-    height: auto;
-    background-color: rgb(236, 232, 233);
-    padding: 10px 40px;
-}
-.acc{
     text-align: center;
-    margin-top: 200px;
+    margin-top: 10em;
 }
-.infos{
-    display: inline-block;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 100px;
-}
-input[type=text],input[type=number],input[type=email],input[type=password]{
-    width: 100%;
-    padding: 10px 30px;
-    margin: 20px 40px;
-    border:2px ridge rgb(216, 175, 146);
-}
-input[type=submit]{
-    width: 200px;
-    background-color: #f3bc88;
-    color: rgb(80, 70, 70);
+main h3{
     font-family: anton;
+    font-size: 100px;
+    margin: 30px;
+}
+main p{
+    margin: 50px 180px;
+    line-height: 1.6;
     font-size: 20px;
-    padding: 14px 20px;
-    margin: 10px 50%;
-    border: 0,1px;
-    border-color: black;
-    border-radius: 4px;
-    cursor: pointer;
 }
-input[type=submit]:hover{
-    background-color: rgb(255, 184, 92);
-    color: maroon;
-    transition: 0,2s;
-    border: ridge 2px rgb(71, 46, 0);
-    box-shadow:0 0 5px rgb(71, 46, 0);
+#END{ 
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(217, 255, 0);
+
 }
-
-
 /* footer */
-
 footer{
     height: 100px;
     padding: 40px;
