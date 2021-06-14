@@ -111,8 +111,8 @@ main p{
 }
 #END{ 
     font-weight: bold;
-    font-size: 50px;
-    color: rgb(217, 255, 0);
+    font-size: 35px;
+    color: rgb(99, 142, 145);
 
 }
 /* footer */

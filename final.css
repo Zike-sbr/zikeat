@@ -14,6 +14,33 @@
     font-family: sail;
     src: url(./fonts/Sail-Regular.ttf);
 }
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
+@keyframes hii{
+    from{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes hello{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 *{
     margin: 0;
     padding: 0;
@@ -41,6 +68,7 @@ header{
     background-color: honeydew;
 }
 .logo h1{
+    animation: hii 2s;
     color: black;
     background-color: honeydew;
 }
@@ -98,33 +126,26 @@ span{
 }
 /* the end of th header  */
 /* the last part isn't working */
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-        transform: opacity linear;
-    }
-}
-@keyframes hii{
-    from{
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    to{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
+
 .principal{
-    height: 90rem;
+    height: 100rem;
     background-image: url(./images/arrière-plan-texture-en-bois-stratifié-beige-et-marron-utilisé-pour-les-planchers-fond-181606757.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
-.carousel{
+.bienvenu{
+    height: 100px;
+    width: 100%;
+    color: rgb(73, 72, 72);
+    text-align: center;
     margin-top: 80px;
+    font-family: anton;
+    font-size: 80px;
+    animation: hello 3s;
+    cursor: default;
+}
+.carousel{
+    margin-top: 20px;
     margin-left: 100px;
     margin-right: 100px;
     overflow: hidden;
@@ -176,7 +197,7 @@ span{
     display: flex;
     justify-content: space-between;
 }
-.rond{
+/* .rond{
     
     background-color: teal;
     width: 20px;
@@ -185,14 +206,14 @@ span{
     border-radius: 50%;
     background-color: #fff;
     position: absolute ;
-}
+} */
 /* autoplay not done yet */
 /* fin du carousel */
 /* debut des 6 cuisines */
 .container{
     background-color: white;
     box-shadow: -2px 0 2px grey;
-    margin: 0px 100px;
+    margin: 20px 100px;
     padding: 30px 60px;
     height: 60em;
     display: grid;
