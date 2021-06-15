@@ -1,3 +1,4 @@
+/* <<<<<<< HEAD */
 @font-face{
     font-family: anton;
     src: url(./fonts/Anton-Regular.ttf)
@@ -118,3 +119,125 @@ footer{
     text-align: center;
     font-weight: bold;
 }
+/* ======= */
+@font-face{
+    font-family: anton;
+    src: url(./fonts/Anton-Regular.ttf)
+}
+@font-face{
+    font-family: work_medium;
+    src: url(./fonts/WorkSans-Medium.ttf);
+}
+@font-face{
+    font-family: buba;
+    src: url(./fonts/BubaDEMO-Outline.otf);
+}
+@font-face{
+    font-family: sail;
+    src: url(./fonts/Sail-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: work_medium;
+}
+header{
+    height: auto;
+    width: 100%;
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 5px 5px gray;
+    background-color: honeydew;
+}
+.logo a{
+    font-family: anton;
+    font-size: 25px;
+    text-decoration: none;
+    background-color: honeydew;
+}
+.logo h1{
+    color: black;
+    background-color: honeydew;
+}
+span{
+    color: teal;
+    background-color: honeydew;
+}
+.navbar{
+    font-family: work_medium;
+    padding: 20px 70px;
+    font-size: 20px;
+    background-color: honeydew;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar a {
+    padding: 5px;
+    text-decoration: none;
+    color: teal;
+    background-color: honeydew;
+}
+.navbar a:hover{
+    color: rgb(11, 51, 51);
+}
+.contact{
+    position: relative;
+}
+#list{
+    height: 140px;
+    width: 150px;
+    margin-top: 5px;
+    background-color: rgb(211, 207, 198);
+    border: 2px solid teal;
+    border-radius: 3px;
+    line-height: 1.5;
+    box-shadow: 0 0 5px grey;
+    position: absolute;
+    display: none;
+}
+#list ul{
+    padding-left: 0;
+}
+#list a,li{
+    color: black;
+    padding: 7px 0;
+    text-align: center;
+    list-style: none;
+    background-color: rgb(211, 207, 198);
+}
+.contact:hover #list{
+    display: block;    
+}
+#list li:hover a{
+    color: rgb(2, 112, 112);
+}
+/* the end of th header  */
+*{
+    margin: 0;
+    padding: 0;
+}
+.worning h1{
+    color: red;
+    font-family: anton;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 20%;
+
+}
+/* footer */
+footer{
+    height: 100px;
+    padding: 40px;
+    color: #fff;
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+}
+/* >>>>>>> 042dbcd75928cc092be7e63436c0e592978da2ae */

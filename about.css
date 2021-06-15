@@ -1,3 +1,4 @@
+/* <<<<<<< HEAD */
 @font-face{
     font-family: anton;
     src: url(./fonts/Anton-Regular.ttf)
@@ -124,3 +125,97 @@ footer{
     text-align: center;
     font-weight: bold;
 }
+/* ======= */
+@font-face{
+    font-family: anton;
+    src: url(./fonts/Anton-Regular.ttf)
+}
+@font-face{
+    font-family: work_medium;
+    src: url(./fonts/WorkSans-Medium.ttf);
+}
+@font-face{
+    font-family: buba;
+    src: url(./fonts/BubaDEMO-Outline.otf);
+}
+@font-face{
+    font-family: sail;
+    src: url(./fonts/Sail-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: work_medium;
+}
+header{
+    height: auto;
+    width: 100%;
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 5px 5px grey;
+    background-color: honeydew;
+}
+.logo a{
+    font-family: anton;
+    font-style: 25px;
+    text-decoration: none;
+    background-color: honeydew;
+}
+.logo h1{
+    color: black;
+    background-color: honeydew;
+}
+span{
+    color: teal;
+    background-color: honeydew;
+}
+.navbar{
+    font-family: work_medium;
+    padding: 20px 70px;
+    font-size: 20px;
+    background-color: honeydew;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar a {
+    padding: 5px;
+    text-decoration: none;
+    color: teal;
+    background-color: honeydew;
+}
+.navbar:hover{
+    color: rgb(11, 51, 51);
+}
+.contact{
+    position: relative;
+}
+#list{
+    background-color: white;
+    line-height: 1.5;
+    position: absolute;
+    display: none;
+}
+.contact:hover#list{
+    display: block;
+}
+main{
+    text-align: center;
+    margin-top: 10em;
+}
+main h3{
+    font-family: anton;
+    font-size: 100px;
+    margin: 30px;
+}
+main p{
+    margin: 50px 180px;
+    line-height: 1.6;
+    font-size: 20px;
+}
+/* >>>>>>> 042dbcd75928cc092be7e63436c0e592978da2ae */
