@@ -4,8 +4,7 @@ let slidePosition = 0;
 const slides = document.getElementsByClassName('carouselpic');
 const totalSlides = slides.length;
 
-document.
-    getElementById('next-button')
+document.getElementById('next-button')
     .addEventListener("click", function() {
         moveToNextSlide();
     })
@@ -73,13 +72,14 @@ function moveToPrevSlide() {
 
 
 function created(e){
-    e.preventDefault()
-    alert("Your accound has been created succesfully");
-    window.location.href = "./about.html";
-    
     
 }
 
+document.getElementById("done").addEventListener("click",(e)=>{
+    e.preventDefault()
+    console.log("test");
+    alert("Your accound has been created succesfully");
+})
 // calling
 
 // function calling(){
@@ -87,6 +87,3 @@ function created(e){
 // }
 
 // keep it for later
-function validateForm(e){
-    e.preventDefault();
-}
