@@ -35,18 +35,18 @@
                 <h1>Join ZIKEAT for daily recipes</h1>
             </div>
             <div class="infos">
-                <form name="loginForm" action="login_form.asp" onsubmit="return validateForm(event) ">
+                <form name="loginForm" onsubmit=validateForm(e)>
                     <label for="name">FIRST NAME:</label>
                     <input type="text" name="firstname" placeholder="enter your firstname" required>
                     <label for="name">LAST NAME:</label>
                     <input type="text" name="lastname" placeholder="enter your last name"><br>
                     <label for="number">PHONE NUMBER:</label>
-                    <input type="number" name="phonenumber" placeholder="enter your phone number" required><br>
+                    <input type="tel" name="phonenumber" placeholder="enter your phone number" required><br>
                     <label for="email">E-mail:</label>
                     <input type="email" name="email" placeholder="ex.exemple@email.com" required><br>
                     <label for="password">PASSWORD:</label>
                     <input type="password" name="password" placeholder="Create a password" required><br>
-                    <input id="done" type="submit" onclick=created() value="CREATE ACCOUNT">
+                    <input id="done" type="submit" onclick=created(e) value="CREATE ACCOUNT">
                 </form>
             </div>
         </main>

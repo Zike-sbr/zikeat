@@ -72,9 +72,12 @@ function moveToPrevSlide() {
 //create an account 
 
 
-function created(){
-    
+function created(e){
+    e.preventDefault()
     alert("Your accound has been created succesfully");
+    window.location.href = "./about.html";
+    
+    
 }
 
 // calling
@@ -84,3 +87,6 @@ function created(){
 // }
 
 // keep it for later
+function validateForm(e){
+    e.preventDefault();
+}
